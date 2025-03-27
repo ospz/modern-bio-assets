@@ -57,6 +57,15 @@ a{
     text-align: center;
 }
 
+@media (max-width: 990px) { /* Adjust 768px as needed */
+    .badge_container {
+        display: none;
+    }
+    .bio_small_infomation{
+        display: none;
+    }
+}
+
 .button_enable{
     font-size:1.6rem;
     height:45px;
