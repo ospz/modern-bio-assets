@@ -57,21 +57,6 @@ a{
     text-align: center;
 }
 
-@media (max-width: 990px) { /* Adjust 768px as needed */
-    .badge_container {
-        display: none;
-    }
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
-        display: none;
-    }
-    .badge_container singleColor badgeGlow{
-        display: none;
-    }
-    .bio_small_infomation{
-        display: none;
-    }
-}
-
 .button_enable{
     font-size:1.6rem;
     height:45px;
@@ -1047,7 +1032,8 @@ body,html{
 }
 @media(max-width: 768px){
     .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
-        padding:4px 6px
+        padding:4px 6px;
+        display: none;
     }
 }
 .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.singleColor svg{
