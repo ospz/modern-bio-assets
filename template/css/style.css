@@ -64,6 +64,9 @@ a{
     .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
         display: none;
     }
+    .badge_container singleColor badgeGlow{
+        display: none;
+    }
     .bio_small_infomation{
         display: none;
     }
