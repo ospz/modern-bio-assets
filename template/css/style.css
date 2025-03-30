@@ -609,19 +609,19 @@ body,html{
 .pricing-card-flex .pricing-card_container.premium .button.unactive{
     animation:bounceRepeat .3s
 }
-.profile-body-1{
+.body{
     overflow:hidden;
     overflow-y:auto;
     height:100vh;
     width:100vw;
     display:flex
 }
-.profile-body-1 canvas{
+.body canvas{
     position:fixed;
     top:0;
     left:0
 }
-.profile-body-1 .overlay_audio{
+.body .overlay_audio{
     position:fixed;
     top:50%;
     left:50%;
@@ -635,7 +635,7 @@ body,html{
     -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px)
 }
-.profile-body-1 .overlay_audio .text{
+.body .overlay_audio .text{
     position:fixed;
     top:50%;
     left:50%;
@@ -648,7 +648,7 @@ body,html{
     user-select:none;
     width:max-content
 }
-.profile-body-1 .revealAudioLike{
+.body .revealAudioLike{
     display:flex;
     align-items:center;
     gap:8px;
@@ -659,10 +659,10 @@ body,html{
     opacity:0;
     z-index:5
 }
-.profile-body-1 .revealAudioLike.active{
+.body .revealAudioLike.active{
     opacity:1
 }
-.profile-body-1 .revealAudioLike .audio_control{
+.body .revealAudioLike .audio_control{
     display:flex;
     align-items:center;
     line-height:0;
@@ -676,42 +676,42 @@ body,html{
     overflow:hidden;
     cursor:pointer
 }
-.profile-body-1 .revealAudioLike .audio_control:hover{
+.body .revealAudioLike .audio_control:hover{
     width:180px;
     padding-right:25px
 }
-.profile-body-1 .revealAudioLike .audio_control .volumeIcon{
+.body .revealAudioLike .audio_control .volumeIcon{
     font-size:2.8rem;
     color:var(--audioLikeColor)
 }
-.profile-body-1 .revealAudioLike .audio_control .volumeIcon.active{
+.body .revealAudioLike .audio_control .volumeIcon.active{
     animation:bounce .3s
 }
-.profile-body-1 .revealAudioLike .audio_control .volumeIcon.unactive{
+.body .revealAudioLike .audio_control .volumeIcon.unactive{
     animation:bounceRepeat .3s
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container{
+.body .revealAudioLike .audio_control .slider-container{
     position:relative;
     width:100%
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-target{
+.body .revealAudioLike .audio_control .slider-container .noUi-target{
     border:none;
     box-shadow:unset;
     background-color:#555;
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-connect{
+.body .revealAudioLike .audio_control .slider-container .noUi-connect{
     background-color:var(--audioLikeColor)
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-base,.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-connects{
+.body .revealAudioLike .audio_control .slider-container .noUi-base,.body .revealAudioLike .audio_control .slider-container .noUi-connects{
     z-index:unset
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-connects{
+.body .revealAudioLike .audio_control .slider-container .noUi-connects{
     background-color:var(--audioLikeRgba05)
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-horizontal{
+.body .revealAudioLike .audio_control .slider-container .noUi-horizontal{
     height:8px
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-handle{
+.body .revealAudioLike .audio_control .slider-container .noUi-handle{
     background-color:#fff;
     border-radius:50%;
     width:16px !important;
@@ -722,13 +722,13 @@ body,html{
     right:-12px !important;
     cursor:pointer
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-handle::after{
+.body .revealAudioLike .audio_control .slider-container .noUi-handle::after{
     display:none
 }
-.profile-body-1 .revealAudioLike .audio_control .slider-container .noUi-handle::before{
+.body .revealAudioLike .audio_control .slider-container .noUi-handle::before{
     display:none
 }
-.profile-body-1 .revealAudioLike .like_button{
+.body .revealAudioLike .like_button{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -743,21 +743,21 @@ body,html{
     overflow:hidden;
     cursor:pointer
 }
-.profile-body-1 .revealAudioLike .like_button.active{
+.body .revealAudioLike .like_button.active{
     animation:bounce .3s
 }
-.profile-body-1 .revealAudioLike .like_button.unactive{
+.body .revealAudioLike .like_button.unactive{
     animation:bounceRepeat .3s
 }
-.profile-body-1 .revealAudioLike .like_button input:checked+.likeIcon{
+.body .revealAudioLike .like_button input:checked+.likeIcon{
     color:#c50b2b
 }
-.profile-body-1 .revealAudioLike .like_button .likeIcon{
+.body .revealAudioLike .like_button .likeIcon{
     font-size:2.8rem;
     flex-shrink:0;
     color:var(--audioLikeColor)
 }
-.profile-body-1 .background{
+.body .background{
     position:fixed;
     width:100%;
     height:100vh;
@@ -765,7 +765,7 @@ body,html{
     background-position:50% !important;
     z-index:-1
 }
-.profile-body-1 .background .noise-effect{
+.body .background .noise-effect{
     position:absolute;
     top:-50%;
     left:-50%;
@@ -780,14 +780,14 @@ body,html{
     opacity:.9;
     visibility:visible
 }
-.profile-body-1 .background .stars-drop{
+.body .background .stars-drop{
     position:absolute;
     width:1px;
     height:1px;
     background:rgba(0,0,0,0);
     animation:animStar 50s linear infinite
 }
-.profile-body-1 .background .stars-drop:after{
+.body .background .stars-drop:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -795,14 +795,14 @@ body,html{
     height:1px;
     background:rgba(0,0,0,0)
 }
-.profile-body-1 .background .stars-drop2{
+.body .background .stars-drop2{
     position:absolute;
     width:2px;
     height:2px;
     background:rgba(0,0,0,0);
     animation:animStar 100s linear infinite
 }
-.profile-body-1 .background .stars-drop2:after{
+.body .background .stars-drop2:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -810,14 +810,14 @@ body,html{
     height:2px;
     background:rgba(0,0,0,0)
 }
-.profile-body-1 .background .stars-drop3{
+.body .background .stars-drop3{
     position:absolute;
     width:3px;
     height:3px;
     background:rgba(0,0,0,0);
     animation:animStar 150s linear infinite
 }
-.profile-body-1 .background .stars-drop3:after{
+.body .background .stars-drop3:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -825,13 +825,13 @@ body,html{
     height:3px;
     background:rgba(0,0,0,0)
 }
-.profile-body-1 .header-header{
+.body .header-header{
     display:none
 }
-.profile-body-1 .footer_container{
+.body .footer_container{
     display:none
 }
-.profile-body-1 .bio-container{
+.body .bio-container{
     max-width:730px;
     width:var(--bioWidth);
     margin:auto;
@@ -839,11 +839,11 @@ body,html{
     padding-bottom:30px
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container{
+    .body .bio-container{
         width:95vw
     }
 }
-.profile-body-1 .bio-container .bio_content_container{
+.body .bio-container .bio_content_container{
     transform-style:preserve-3d;
     border-radius:25px;
     height:max-content;
@@ -853,14 +853,14 @@ body,html{
     border-radius:var(--borderRadius);
     border:var(--border)
 }
-.profile-body-1 .bio-container .bio_content_container.reveal{
+.body .bio-container .bio_content_container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.profile-body-1 .bio-container .bio_content_container.reveal.active{
+.body .bio-container .bio_content_container.reveal.active{
     opacity:1
 }
-.profile-body-1 .bio-container .bio_content_container .bio_small_infomation{
+.body .bio-container .bio_content_container .bio_small_infomation{
     display:flex;
     align-items:center;
     gap:10px;
@@ -872,63 +872,63 @@ body,html{
     user-select:none;
     z-index:1
 }
-.profile-body-1 .bio-container .bio_content_container .bio_small_infomation .bio_infomation{
+.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation{
     display:flex;
     align-items:center
 }
-.profile-body-1 .bio-container .bio_content_container .bio_small_infomation .bio_infomation svg{
+.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation svg{
     font-size:2rem;
     color:var(--nameColor);
     margin-right:5px
 }
-.profile-body-1 .bio-container .bio_content_container .bio_small_infomation .bio_infomation .text{
+.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation .text{
     font-size:1.4rem;
     color:var(--nameColor)
 }
-.profile-body-1 .bio-container .bio_content_container .bio_small_infomation .border{
+.body .bio-container .bio_content_container .bio_small_infomation .border{
     content:"";
     height:15px;
     background-color:rgba(255,255,255,.2);
     width:2px;
     cursor:pointer
 }
-.profile-body-1 .bio-container .bio_content_container .content-container{
+.body .bio-container .bio_content_container .content-container{
     position:relative;
     width:100%;
     padding:40px;
     overflow:hidden
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container{
+    .body .bio-container .bio_content_container .content-container{
         padding:15px 15px 40px 15px
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content{
+.body .bio-container .bio_content_container .content-container .content{
     display:flex;
     flex-direction:column;
     width:100%;
     max-width:650px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top{
+.body .bio-container .bio_content_container .content-container .content .top{
     display:flex;
     align-items:center;
     gap:10px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top.reveal{
+.body .bio-container .bio_content_container .content-container .content .top.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     overflow:hidden;
     height:0px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top.reveal.active{
+.body .bio-container .bio_content_container .content-container .content .top.reveal.active{
     opacity:1;
     height:160px;
     overflow:unset
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .img_container{
+.body .bio-container .bio_content_container .content-container .content .top .img_container{
     position:relative
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .img_container .img{
+.body .bio-container .bio_content_container .content-container .content .top .img_container .img{
     width:160px;
     height:160px;
     border-radius:50%;
@@ -936,34 +936,34 @@ body,html{
     color:#1a1a1a
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .img_container .img{
+    .body .bio-container .bio_content_container .content-container .content .top .img_container .img{
         width:120px;
         height:120px
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .img_container .img_effect{
+.body .bio-container .bio_content_container .content-container .content .top .img_container .img_effect{
     position:absolute;
     width:120%;
     top:48%;
     left:50%;
     transform:translate(-50%, -50%)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column{
     display:flex;
     flex-direction:column;
     gap:6px
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column{
+    .body .bio-container .bio_content_container .content-container .content .top .flex-column{
         width:100%
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex{
     display:flex;
     align-items:center;
     gap:5px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header{
     color:var(--nameColor);
     font-size:3.6rem;
     font-weight:600;
@@ -982,7 +982,7 @@ body,html{
         background-position:500%
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.shine_effect{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.shine_effect{
     margin-right:10px;
     position:relative;
     overflow:hidden;
@@ -995,7 +995,7 @@ body,html{
     -webkit-text-fill-color:rgba(0,0,0,0);
     text-shadow:unset !important
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.rainbow-text{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.rainbow-text{
     animation:rainbowAnimation 4s linear infinite;
     -webkit-background-clip:text;
     background-clip:text;
@@ -1004,7 +1004,7 @@ body,html{
     color:rgba(0,0,0,0);
     text-shadow:none
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
     max-width:400px;
     font-weight:600;
     outline:none;
@@ -1012,16 +1012,16 @@ body,html{
     font-size:1em
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
+    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
         max-width:none;
         min-width:0px
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__cursor{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__cursor{
     font-weight:600;
     text-shadow:var(--nameGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
     display:flex;
     background-color:var(--discordBackground);
     border:2px solid var(--discordBorder);
@@ -1031,77 +1031,77 @@ body,html{
     gap:8px
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
+    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
         padding:4px 6px;
         display: none;
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.singleColor svg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.singleColor svg{
     color:var(--badgeColor) !important
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.badgeGlow svg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.badgeGlow svg{
     filter:var(--badgeGlow) !important
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
     width:20px;
     height:20px
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
+    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
         width:18px;
         height:18px
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img.badgeImgGlow{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img.badgeImgGlow{
     filter:var(--badgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
     font-size:2rem;
     outline:none;
     border:none
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
+    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
         font-size:1.8rem
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#premium{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#premium{
     color:#c3fffd;
     filter:var(--premiumBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#verify{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#verify{
     color:#009fff;
     filter:var(--verifyBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#bughunter{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#bughunter{
     color:#37ff74;
     filter:var(--bugHunterBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#og{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#og{
     color:#8a2be2;
     filter:var(--ogBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#developer{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#developer{
     color:#4caf50;
     filter:var(--developerBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#staff{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#staff{
     color:#b2b6f6;
     filter:var(--staffBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#boost{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#boost{
     color:#db3838;
     filter:var(--boostBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#valentine{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#valentine{
     color:#c50b2b;
     filter:var(--valentineBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#unleash{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#unleash{
     color:#2ea967;
     filter:var(--unleashBadgeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description{
     font-size:1.6rem;
     line-height:1.4em;
     color:var(--descriptionColor);
@@ -1111,22 +1111,22 @@ body,html{
     outline:none;
     margin-left:8px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__wrapper{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__wrapper{
     max-width:400px;
     font-size:1em;
     outline:none;
     white-space:nowrap;
     text-shadow:var(--descriptionGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__cursor{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__cursor{
     text-shadow:var(--descriptionGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container{
     display:flex;
     flex-wrap:wrap;
     align-items:center
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item{
     display:flex;
     align-items:center;
     font-size:2.2rem;
@@ -1137,125 +1137,125 @@ body,html{
     filter:var(--iconGlow) !important;
     transition:scale .3s ease
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item:hover{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item:hover{
     scale:1.1
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .img{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .img{
     width:22px;
     height:22px;
     object-fit:cover;
     border-radius:5px;
     filter:var(--customizeIconGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord{
     transition:.4s
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord:hover{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord:hover{
     background-color:rgba(51,51,51,.2);
     border-radius:50px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .svg_text{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .svg_text{
     font-size:1.4rem;
     color:#fff;
     margin-left:5px;
     font-weight:500
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor svg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor svg{
     color:var(--iconColor) !important
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor .svg_text{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor .svg_text{
     color:var(--iconColor) !important
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg{
     color:#000
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#snapChatSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#snapChatSvg{
     color:#fffc00;
     filter:var(--snapChatGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#instagramSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#instagramSvg{
     color:#f472b6;
     filter:var(--instagramGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#youtubeSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#youtubeSvg{
     color:red;
     filter:var(--youtubeGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#redditSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#redditSvg{
     color:#fe4000;
     filter:var(--redditGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#tiktokSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#tiktokSvg{
     color:#fff;
     filter:var(--tiktokGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#telegramSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#telegramSvg{
     color:#2aabee;
     filter:var(--telegramGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#facebookSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#facebookSvg{
     color:#2563eb;
     filter:var(--facebookGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#spotifySvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#spotifySvg{
     color:#1ed760;
     filter:var(--spotifyGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#steamSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#steamSvg{
     color:#fff;
     filter:var(--steamGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#discordSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#discordSvg{
     color:#5865f2;
     filter:var(--discordGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#riotSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#riotSvg{
     color:#d1363a;
     filter:var(--riotGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#pinterestSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#pinterestSvg{
     color:#e4001c;
     filter:var(--pinterestGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#emailSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#emailSvg{
     color:#fff;
     filter:var(--emailGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#robloxSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#robloxSvg{
     color:#fff;
     filter:var(--robloxGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#paypalSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#paypalSvg{
     color:#003087;
     filter:var(--paypalGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ethSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ethSvg{
     color:#8c8c8c;
     filter:var(--ethGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#btcSVG{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#btcSVG{
     color:#ef8e19;
     filter:var(--btcGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ltcSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ltcSvg{
     color:#325a98;
     filter:var(--ltcGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#soundcloudSvg{
+.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#soundcloudSvg{
     color:#ff4700;
     filter:var(--soundcloudGlow)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord{
+.body .bio-container .bio_content_container .content-container .content .flex_discord{
     display:flex;
     gap:10px;
     margin-top:16px
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord{
+    .body .bio-container .bio_content_container .content-container .content .flex_discord{
         flex-direction:column
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
     display:flex;
     justify-content:center;
     flex:1 1 50%;
@@ -1263,12 +1263,12 @@ body,html{
     width:0
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
+    .body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
         width:100%;
         min-width:unset
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content{
     display:flex;
     align-items:center;
     gap:8px;
@@ -1279,20 +1279,20 @@ body,html{
     border-radius:25px;
     top:0
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal.active{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal.active{
     opacity:1;
     min-height:104px;
     height:100%;
     scale:1
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_link_large{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_link_large{
     font-size:1.6rem;
     background-color:#229150;
     border-radius:8px;
@@ -1303,16 +1303,16 @@ body,html{
     text-decoration:none;
     cursor:pointer
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container{
     position:relative
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_avatar{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_avatar{
     height:70px;
     width:70px;
     border-radius:50%;
     object-fit:cover
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_status{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_status{
     position:absolute;
     width:17px;
     height:17px;
@@ -1320,17 +1320,17 @@ body,html{
     right:5px;
     object-fit:cover
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:100%
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div{
     white-space:nowrap;
     overflow:hidden
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_link{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_link{
     font-size:1.2rem;
     color:#fff;
     padding:2px 10px;
@@ -1338,48 +1338,48 @@ body,html{
     border-radius:8px;
     cursor:pointer
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_name{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_name{
     font-size:2.2rem;
     color:var(--nameColor);
     font-weight:500;
     line-height:1em
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description{
     display:flex;
     margin-top:5px;
     font-size:1.4rem;
     color:var(--discordDescription);
     line-height:1.2em
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .high{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .high{
     color:var(--nameColor);
     font-weight:500
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .description_icon{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .description_icon{
     width:20px;
     height:20px;
     object-fit:cover;
     margin-right:5px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span{
     display:flex;
     align-items:center;
     margin-right:5px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span svg{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span svg{
     color:#dce7e8
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span .online_svg{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span .online_svg{
     color:#23a559
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container .img_activity{
+.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container .img_activity{
     height:70px;
     width:70px;
     border-radius:15px;
     object-fit:cover;
     margin-left:10px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1390,52 +1390,52 @@ body,html{
     border:2px solid var(--discordBorder);
     width:100%
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:0
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
     width:80px;
     height:80px;
     border-radius:50%;
     object-fit:cover
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
+    .body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
         width:70px;
         height:70px
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
     font-size:1.8rem;
     font-weight:500;
     margin-top:5px;
     color:var(--nameColor)
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
+    .body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
         font-size:1.6rem
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:1;
     overflow:hidden
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .date_time{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .date_time{
     font-size:1.4rem;
     color:var(--descriptionColor)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .svg{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .svg{
     font-size:8rem;
     color:#c50b2b;
     animation:heartBeat 1s infinite
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .img{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .img{
     height:80px;
     width:80px
 }
@@ -1447,13 +1447,13 @@ body,html{
         transform:scale(1.1)
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .time{
+.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .time{
     font-size:1.4rem;
     text-align:center;
     line-height:1.3em;
     color:var(--descriptionColor)
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container{
     font-size:160%;
     display:flex;
     justify-content:center;
@@ -1462,36 +1462,36 @@ body,html{
     color:var(--nameColor);
     margin-top:15px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal.active{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal.active{
     opacity:1
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container strong,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container b{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container strong,.body .bio-container .bio_content_container .content-container .content .markdown_content_container b{
     font-weight:bold
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h1,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h2,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h3,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h4,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h5,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container h6{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container h1,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h2,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h3,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h4,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h5,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h6{
     margin-top:24px;
     margin-bottom:16px;
     font-weight:600;
     line-height:1.25
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container img{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container img{
     max-width:100%
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container li+li{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container li+li{
     margin-top:4px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container p,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container blockquote,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container ul,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container ol,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container dl,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container table,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container pre,.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container details{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container p,.body .bio-container .bio_content_container .content-container .content .markdown_content_container blockquote,.body .bio-container .bio_content_container .content-container .content .markdown_content_container ul,.body .bio-container .bio_content_container .content-container .content .markdown_content_container ol,.body .bio-container .bio_content_container .content-container .content .markdown_content_container dl,.body .bio-container .bio_content_container .content-container .content .markdown_content_container table,.body .bio-container .bio_content_container .content-container .content .markdown_content_container pre,.body .bio-container .bio_content_container .content-container .content .markdown_content_container details{
     margin-top:0;
     margin-bottom:16px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container ul{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container ul{
     padding-left:40px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content{
     background-color:var(--discordBackground);
     border:2px solid var(--discordBorder);
     padding:10px;
@@ -1502,59 +1502,59 @@ body,html{
     overflow-x:none;
     scrollbar-width:none
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content::-webkit-scrollbar{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content::-webkit-scrollbar{
     display:none
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal.active{
+.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal.active{
     opacity:1;
     min-height:104px;
     height:100%;
     scale:1
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper{
+.body .bio-container .bio_content_container .content-container .content .swiper{
     max-width:650px;
     overflow:hidden;
     margin-top:16px;
     height:200px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper.reveal{
+.body .bio-container .bio_content_container .content-container .content .swiper.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper.reveal.active{
+.body .bio-container .bio_content_container .content-container .content .swiper.reveal.active{
     opacity:1;
     height:200px;
     scale:1
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .swiper{
+    .body .bio-container .bio_content_container .content-container .content .swiper{
         width:calc(90vw - 15px)
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card{
+.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card{
     position:relative;
     min-width:300px;
     border-radius:25px;
     overflow:hidden;
     width:610px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card .img{
+.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .img{
     width:100%;
     height:100%;
     object-fit:cover;
     border-radius:25px
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left{
+.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left{
     position:absolute;
     display:flex;
     flex-direction:column;
@@ -1565,7 +1565,7 @@ body,html{
     background:rgba(0,0,0,0);
     z-index:2
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
+.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
     font-size:1.8rem;
     width:100%;
     line-height:1.3em;
@@ -1574,11 +1574,11 @@ body,html{
     font-weight:500
 }
 @media(max-width: 768px){
-    .profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
+    .body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
         font-size:1.6rem
     }
 }
-.profile-body-1 .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .description{
+.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .description{
     font-size:1.2rem;
     width:100%;
     line-height:1.3em;
