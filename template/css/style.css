@@ -609,19 +609,19 @@ body,html{
 .pricing-card-flex .pricing-card_container.premium .button.unactive{
     animation:bounceRepeat .3s
 }
-.body{
+.bio-body{
     overflow:hidden;
     overflow-y:auto;
     height:100vh;
     width:100vw;
     display:flex
 }
-.body canvas{
+.bio-body canvas{
     position:fixed;
     top:0;
     left:0
 }
-.body .overlay_audio{
+.bio-body .overlay_audio{
     position:fixed;
     top:50%;
     left:50%;
@@ -635,7 +635,7 @@ body,html{
     -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px)
 }
-.body .overlay_audio .text{
+.bio-body .overlay_audio .text{
     position:fixed;
     top:50%;
     left:50%;
@@ -648,7 +648,7 @@ body,html{
     user-select:none;
     width:max-content
 }
-.body .revealAudioLike{
+.bio-body .revealAudioLike{
     display:flex;
     align-items:center;
     gap:8px;
@@ -659,10 +659,10 @@ body,html{
     opacity:0;
     z-index:5
 }
-.body .revealAudioLike.active{
+.bio-body .revealAudioLike.active{
     opacity:1
 }
-.body .revealAudioLike .audio_control{
+.bio-body .revealAudioLike .audio_control{
     display:flex;
     align-items:center;
     line-height:0;
@@ -676,42 +676,42 @@ body,html{
     overflow:hidden;
     cursor:pointer
 }
-.body .revealAudioLike .audio_control:hover{
+.bio-body .revealAudioLike .audio_control:hover{
     width:180px;
     padding-right:25px
 }
-.body .revealAudioLike .audio_control .volumeIcon{
+.bio-body .revealAudioLike .audio_control .volumeIcon{
     font-size:2.8rem;
     color:var(--audioLikeColor)
 }
-.body .revealAudioLike .audio_control .volumeIcon.active{
+.bio-body .revealAudioLike .audio_control .volumeIcon.active{
     animation:bounce .3s
 }
-.body .revealAudioLike .audio_control .volumeIcon.unactive{
+.bio-body .revealAudioLike .audio_control .volumeIcon.unactive{
     animation:bounceRepeat .3s
 }
-.body .revealAudioLike .audio_control .slider-container{
+.bio-body .revealAudioLike .audio_control .slider-container{
     position:relative;
     width:100%
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-target{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-target{
     border:none;
     box-shadow:unset;
     background-color:#555;
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-connect{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-connect{
     background-color:var(--audioLikeColor)
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-base,.body .revealAudioLike .audio_control .slider-container .noUi-connects{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-base,.bio-body .revealAudioLike .audio_control .slider-container .noUi-connects{
     z-index:unset
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-connects{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-connects{
     background-color:var(--audioLikeRgba05)
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-horizontal{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-horizontal{
     height:8px
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-handle{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-handle{
     background-color:#fff;
     border-radius:50%;
     width:16px !important;
@@ -722,13 +722,13 @@ body,html{
     right:-12px !important;
     cursor:pointer
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-handle::after{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-handle::after{
     display:none
 }
-.body .revealAudioLike .audio_control .slider-container .noUi-handle::before{
+.bio-body .revealAudioLike .audio_control .slider-container .noUi-handle::before{
     display:none
 }
-.body .revealAudioLike .like_button{
+.bio-body .revealAudioLike .like_button{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -743,21 +743,21 @@ body,html{
     overflow:hidden;
     cursor:pointer
 }
-.body .revealAudioLike .like_button.active{
+.bio-body .revealAudioLike .like_button.active{
     animation:bounce .3s
 }
-.body .revealAudioLike .like_button.unactive{
+.bio-body .revealAudioLike .like_button.unactive{
     animation:bounceRepeat .3s
 }
-.body .revealAudioLike .like_button input:checked+.likeIcon{
+.bio-body .revealAudioLike .like_button input:checked+.likeIcon{
     color:#c50b2b
 }
-.body .revealAudioLike .like_button .likeIcon{
+.bio-body .revealAudioLike .like_button .likeIcon{
     font-size:2.8rem;
     flex-shrink:0;
     color:var(--audioLikeColor)
 }
-.body .background{
+.bio-body .background{
     position:fixed;
     width:100%;
     height:100vh;
@@ -765,7 +765,7 @@ body,html{
     background-position:50% !important;
     z-index:-1
 }
-.body .background .noise-effect{
+.bio-body .background .noise-effect{
     position:absolute;
     top:-50%;
     left:-50%;
@@ -780,14 +780,14 @@ body,html{
     opacity:.9;
     visibility:visible
 }
-.body .background .stars-drop{
+.bio-body .background .stars-drop{
     position:absolute;
     width:1px;
     height:1px;
     background:rgba(0,0,0,0);
     animation:animStar 50s linear infinite
 }
-.body .background .stars-drop:after{
+.bio-body .background .stars-drop:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -795,14 +795,14 @@ body,html{
     height:1px;
     background:rgba(0,0,0,0)
 }
-.body .background .stars-drop2{
+.bio-body .background .stars-drop2{
     position:absolute;
     width:2px;
     height:2px;
     background:rgba(0,0,0,0);
     animation:animStar 100s linear infinite
 }
-.body .background .stars-drop2:after{
+.bio-body .background .stars-drop2:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -810,14 +810,14 @@ body,html{
     height:2px;
     background:rgba(0,0,0,0)
 }
-.body .background .stars-drop3{
+.bio-body .background .stars-drop3{
     position:absolute;
     width:3px;
     height:3px;
     background:rgba(0,0,0,0);
     animation:animStar 150s linear infinite
 }
-.body .background .stars-drop3:after{
+.bio-body .background .stars-drop3:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -825,13 +825,13 @@ body,html{
     height:3px;
     background:rgba(0,0,0,0)
 }
-.body .header-header{
+.bio-body .header-header{
     display:none
 }
-.body .footer_container{
+.bio-body .footer_container{
     display:none
 }
-.body .bio-container{
+.bio-body .bio-container{
     max-width:730px;
     width:var(--bioWidth);
     margin:auto;
@@ -839,11 +839,11 @@ body,html{
     padding-bottom:30px
 }
 @media(max-width: 768px){
-    .body .bio-container{
+    .bio-body .bio-container{
         width:95vw
     }
 }
-.body .bio-container .bio_content_container{
+.bio-body .bio-container .bio_content_container{
     transform-style:preserve-3d;
     border-radius:25px;
     height:max-content;
@@ -853,14 +853,14 @@ body,html{
     border-radius:var(--borderRadius);
     border:var(--border)
 }
-.body .bio-container .bio_content_container.reveal{
+.bio-body .bio-container .bio_content_container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.body .bio-container .bio_content_container.reveal.active{
+.bio-body .bio-container .bio_content_container.reveal.active{
     opacity:1
 }
-.body .bio-container .bio_content_container .bio_small_infomation{
+.bio-body .bio-container .bio_content_container .bio_small_infomation{
     display:flex;
     align-items:center;
     gap:10px;
@@ -872,63 +872,63 @@ body,html{
     user-select:none;
     z-index:1
 }
-.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation{
+.bio-body .bio-container .bio_content_container .bio_small_infomation .bio_infomation{
     display:flex;
     align-items:center
 }
-.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation svg{
+.bio-body .bio-container .bio_content_container .bio_small_infomation .bio_infomation svg{
     font-size:2rem;
     color:var(--nameColor);
     margin-right:5px
 }
-.body .bio-container .bio_content_container .bio_small_infomation .bio_infomation .text{
+.bio-body .bio-container .bio_content_container .bio_small_infomation .bio_infomation .text{
     font-size:1.4rem;
     color:var(--nameColor)
 }
-.body .bio-container .bio_content_container .bio_small_infomation .border{
+.bio-body .bio-container .bio_content_container .bio_small_infomation .border{
     content:"";
     height:15px;
     background-color:rgba(255,255,255,.2);
     width:2px;
     cursor:pointer
 }
-.body .bio-container .bio_content_container .content-container{
+.bio-body .bio-container .bio_content_container .content-container{
     position:relative;
     width:100%;
     padding:40px;
     overflow:hidden
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container{
+    .bio-body .bio-container .bio_content_container .content-container{
         padding:15px 15px 40px 15px
     }
 }
-.body .bio-container .bio_content_container .content-container .content{
+.bio-body .bio-container .bio_content_container .content-container .content{
     display:flex;
     flex-direction:column;
     width:100%;
     max-width:650px
 }
-.body .bio-container .bio_content_container .content-container .content .top{
+.bio-body .bio-container .bio_content_container .content-container .content .top{
     display:flex;
     align-items:center;
     gap:10px
 }
-.body .bio-container .bio_content_container .content-container .content .top.reveal{
+.bio-body .bio-container .bio_content_container .content-container .content .top.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     overflow:hidden;
     height:0px
 }
-.body .bio-container .bio_content_container .content-container .content .top.reveal.active{
+.bio-body .bio-container .bio_content_container .content-container .content .top.reveal.active{
     opacity:1;
     height:160px;
     overflow:unset
 }
-.body .bio-container .bio_content_container .content-container .content .top .img_container{
+.bio-body .bio-container .bio_content_container .content-container .content .top .img_container{
     position:relative
 }
-.body .bio-container .bio_content_container .content-container .content .top .img_container .img{
+.bio-body .bio-container .bio_content_container .content-container .content .top .img_container .img{
     width:160px;
     height:160px;
     border-radius:50%;
@@ -936,34 +936,34 @@ body,html{
     color:#1a1a1a
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .img_container .img{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .img_container .img{
         width:120px;
         height:120px
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .img_container .img_effect{
+.bio-body .bio-container .bio_content_container .content-container .content .top .img_container .img_effect{
     position:absolute;
     width:120%;
     top:48%;
     left:50%;
     transform:translate(-50%, -50%)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column{
     display:flex;
     flex-direction:column;
     gap:6px
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .flex-column{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .flex-column{
         width:100%
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex{
     display:flex;
     align-items:center;
     gap:5px
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header{
     color:var(--nameColor);
     font-size:3.6rem;
     font-weight:600;
@@ -982,7 +982,7 @@ body,html{
         background-position:500%
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.shine_effect{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.shine_effect{
     margin-right:10px;
     position:relative;
     overflow:hidden;
@@ -995,7 +995,7 @@ body,html{
     -webkit-text-fill-color:rgba(0,0,0,0);
     text-shadow:unset !important
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.rainbow-text{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header.rainbow-text{
     animation:rainbowAnimation 4s linear infinite;
     -webkit-background-clip:text;
     background-clip:text;
@@ -1004,7 +1004,7 @@ body,html{
     color:rgba(0,0,0,0);
     text-shadow:none
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
     max-width:400px;
     font-weight:600;
     outline:none;
@@ -1012,16 +1012,16 @@ body,html{
     font-size:1em
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__wrapper{
         max-width:none;
         min-width:0px
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__cursor{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .header .Typewriter__cursor{
     font-weight:600;
     text-shadow:var(--nameGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
     display:flex;
     background-color:var(--discordBackground);
     border:2px solid var(--discordBorder);
@@ -1031,77 +1031,77 @@ body,html{
     gap:8px
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container{
         padding:4px 6px;
         display: none;
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.singleColor svg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.singleColor svg{
     color:var(--badgeColor) !important
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.badgeGlow svg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container.badgeGlow svg{
     filter:var(--badgeGlow) !important
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
     width:20px;
     height:20px
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img{
         width:18px;
         height:18px
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img.badgeImgGlow{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container .badge_img.badgeImgGlow{
     filter:var(--badgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
     font-size:2rem;
     outline:none;
     border:none
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
+    .bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg{
         font-size:1.8rem
     }
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#premium{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#premium{
     color:#c3fffd;
     filter:var(--premiumBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#verify{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#verify{
     color:#009fff;
     filter:var(--verifyBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#bughunter{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#bughunter{
     color:#37ff74;
     filter:var(--bugHunterBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#og{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#og{
     color:#8a2be2;
     filter:var(--ogBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#developer{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#developer{
     color:#4caf50;
     filter:var(--developerBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#staff{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#staff{
     color:#b2b6f6;
     filter:var(--staffBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#boost{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#boost{
     color:#db3838;
     filter:var(--boostBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#valentine{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#valentine{
     color:#c50b2b;
     filter:var(--valentineBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#unleash{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .flex .badge_container svg#unleash{
     color:#2ea967;
     filter:var(--unleashBadgeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description{
     font-size:1.6rem;
     line-height:1.4em;
     color:var(--descriptionColor);
@@ -1111,22 +1111,22 @@ body,html{
     outline:none;
     margin-left:8px
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__wrapper{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__wrapper{
     max-width:400px;
     font-size:1em;
     outline:none;
     white-space:nowrap;
     text-shadow:var(--descriptionGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__cursor{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .bio_description .Typewriter__cursor{
     text-shadow:var(--descriptionGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container{
     display:flex;
     flex-wrap:wrap;
     align-items:center
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item{
     display:flex;
     align-items:center;
     font-size:2.2rem;
@@ -1137,125 +1137,125 @@ body,html{
     filter:var(--iconGlow) !important;
     transition:scale .3s ease
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item:hover{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item:hover{
     scale:1.1
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .img{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .img{
     width:22px;
     height:22px;
     object-fit:cover;
     border-radius:5px;
     filter:var(--customizeIconGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord{
     transition:.4s
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord:hover{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.discord:hover{
     background-color:rgba(51,51,51,.2);
     border-radius:50px
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .svg_text{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item .svg_text{
     font-size:1.4rem;
     color:#fff;
     margin-left:5px;
     font-weight:500
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor svg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor svg{
     color:var(--iconColor) !important
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor .svg_text{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item.singleColor .svg_text{
     color:var(--iconColor) !important
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg{
     color:#000
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#snapChatSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#snapChatSvg{
     color:#fffc00;
     filter:var(--snapChatGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#instagramSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#instagramSvg{
     color:#f472b6;
     filter:var(--instagramGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#youtubeSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#youtubeSvg{
     color:red;
     filter:var(--youtubeGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#redditSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#redditSvg{
     color:#fe4000;
     filter:var(--redditGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#tiktokSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#tiktokSvg{
     color:#fff;
     filter:var(--tiktokGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#telegramSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#telegramSvg{
     color:#2aabee;
     filter:var(--telegramGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#facebookSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#facebookSvg{
     color:#2563eb;
     filter:var(--facebookGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#spotifySvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#spotifySvg{
     color:#1ed760;
     filter:var(--spotifyGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#steamSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#steamSvg{
     color:#fff;
     filter:var(--steamGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#discordSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#discordSvg{
     color:#5865f2;
     filter:var(--discordGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#riotSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#riotSvg{
     color:#d1363a;
     filter:var(--riotGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#pinterestSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#pinterestSvg{
     color:#e4001c;
     filter:var(--pinterestGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#emailSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#emailSvg{
     color:#fff;
     filter:var(--emailGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#robloxSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#robloxSvg{
     color:#fff;
     filter:var(--robloxGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#paypalSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#paypalSvg{
     color:#003087;
     filter:var(--paypalGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ethSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ethSvg{
     color:#8c8c8c;
     filter:var(--ethGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#btcSVG{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#btcSVG{
     color:#ef8e19;
     filter:var(--btcGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ltcSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#ltcSvg{
     color:#325a98;
     filter:var(--ltcGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#soundcloudSvg{
+.bio-body .bio-container .bio_content_container .content-container .content .top .flex-column .svg_container .svg_item svg#soundcloudSvg{
     color:#ff4700;
     filter:var(--soundcloudGlow)
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord{
     display:flex;
     gap:10px;
     margin-top:16px
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .flex_discord{
+    .bio-body .bio-container .bio_content_container .content-container .content .flex_discord{
         flex-direction:column
     }
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
     display:flex;
     justify-content:center;
     flex:1 1 50%;
@@ -1263,12 +1263,12 @@ body,html{
     width:0
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
+    .bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container{
         width:100%;
         min-width:unset
     }
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content{
     display:flex;
     align-items:center;
     gap:8px;
@@ -1279,20 +1279,20 @@ body,html{
     border-radius:25px;
     top:0
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal.active{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content.reveal.active{
     opacity:1;
     min-height:104px;
     height:100%;
     scale:1
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_link_large{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_link_large{
     font-size:1.6rem;
     background-color:#229150;
     border-radius:8px;
@@ -1303,16 +1303,16 @@ body,html{
     text-decoration:none;
     cursor:pointer
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container{
     position:relative
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_avatar{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_avatar{
     height:70px;
     width:70px;
     border-radius:50%;
     object-fit:cover
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_status{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .discord_avatar_container .discord_status{
     position:absolute;
     width:17px;
     height:17px;
@@ -1320,17 +1320,17 @@ body,html{
     right:5px;
     object-fit:cover
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:100%
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div{
     white-space:nowrap;
     overflow:hidden
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_link{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_link{
     font-size:1.2rem;
     color:#fff;
     padding:2px 10px;
@@ -1338,48 +1338,48 @@ body,html{
     border-radius:8px;
     cursor:pointer
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_name{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_name{
     font-size:2.2rem;
     color:var(--nameColor);
     font-weight:500;
     line-height:1em
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description{
     display:flex;
     margin-top:5px;
     font-size:1.4rem;
     color:var(--discordDescription);
     line-height:1.2em
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .high{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .high{
     color:var(--nameColor);
     font-weight:500
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .description_icon{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description .description_icon{
     width:20px;
     height:20px;
     object-fit:cover;
     margin-right:5px
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span{
     display:flex;
     align-items:center;
     margin-right:5px
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span svg{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span svg{
     color:#dce7e8
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span .online_svg{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container div .discord_description span .online_svg{
     color:#23a559
 }
-.body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container .img_activity{
+.bio-body .bio-container .bio_content_container .content-container .content .flex_discord .discord_container .discord_content .text_container .img_activity{
     height:70px;
     width:70px;
     border-radius:15px;
     object-fit:cover;
     margin-left:10px
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1390,52 +1390,52 @@ body,html{
     border:2px solid var(--discordBorder);
     width:100%
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:0
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
     width:80px;
     height:80px;
     border-radius:50%;
     object-fit:cover
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
+    .bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .avatar{
         width:70px;
         height:70px
     }
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
     font-size:1.8rem;
     font-weight:500;
     margin-top:5px;
     color:var(--nameColor)
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
+    .bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .avatar_container .name{
         font-size:1.6rem
     }
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:1;
     overflow:hidden
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .date_time{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .date_time{
     font-size:1.4rem;
     color:var(--descriptionColor)
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .svg{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .svg{
     font-size:8rem;
     color:#c50b2b;
     animation:heartBeat 1s infinite
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .img{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .img{
     height:80px;
     width:80px
 }
@@ -1447,13 +1447,13 @@ body,html{
         transform:scale(1.1)
     }
 }
-.body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .time{
+.bio-body .bio-container .bio_content_container .content-container .content .couple_embed_container .heart_container .time{
     font-size:1.4rem;
     text-align:center;
     line-height:1.3em;
     color:var(--descriptionColor)
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container{
     font-size:160%;
     display:flex;
     justify-content:center;
@@ -1462,36 +1462,36 @@ body,html{
     color:var(--nameColor);
     margin-top:15px
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal.active{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container.reveal.active{
     opacity:1
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container strong,.body .bio-container .bio_content_container .content-container .content .markdown_content_container b{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container strong,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container b{
     font-weight:bold
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container h1,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h2,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h3,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h4,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h5,.body .bio-container .bio_content_container .content-container .content .markdown_content_container h6{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h1,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h2,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h3,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h4,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h5,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container h6{
     margin-top:24px;
     margin-bottom:16px;
     font-weight:600;
     line-height:1.25
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container img{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container img{
     max-width:100%
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container li+li{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container li+li{
     margin-top:4px
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container p,.body .bio-container .bio_content_container .content-container .content .markdown_content_container blockquote,.body .bio-container .bio_content_container .content-container .content .markdown_content_container ul,.body .bio-container .bio_content_container .content-container .content .markdown_content_container ol,.body .bio-container .bio_content_container .content-container .content .markdown_content_container dl,.body .bio-container .bio_content_container .content-container .content .markdown_content_container table,.body .bio-container .bio_content_container .content-container .content .markdown_content_container pre,.body .bio-container .bio_content_container .content-container .content .markdown_content_container details{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container p,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container blockquote,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container ul,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container ol,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container dl,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container table,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container pre,.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container details{
     margin-top:0;
     margin-bottom:16px
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container ul{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container ul{
     padding-left:40px
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content{
     background-color:var(--discordBackground);
     border:2px solid var(--discordBorder);
     padding:10px;
@@ -1502,59 +1502,59 @@ body,html{
     overflow-x:none;
     scrollbar-width:none
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content::-webkit-scrollbar{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content::-webkit-scrollbar{
     display:none
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal.active{
+.bio-body .bio-container .bio_content_container .content-container .content .markdown_content_container .markdown_content.reveal.active{
     opacity:1;
     min-height:104px;
     height:100%;
     scale:1
 }
-.body .bio-container .bio_content_container .content-container .content .swiper{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper{
     max-width:650px;
     overflow:hidden;
     margin-top:16px;
     height:200px
 }
-.body .bio-container .bio_content_container .content-container .content .swiper.reveal{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.body .bio-container .bio_content_container .content-container .content .swiper.reveal.active{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper.reveal.active{
     opacity:1;
     height:200px;
     scale:1
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .swiper{
+    .bio-body .bio-container .bio_content_container .content-container .content .swiper{
         width:calc(90vw - 15px)
     }
 }
-.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card{
     position:relative;
     min-width:300px;
     border-radius:25px;
     overflow:hidden;
     width:610px
 }
-.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .img{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .img{
     width:100%;
     height:100%;
     object-fit:cover;
     border-radius:25px
 }
-.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left{
     position:absolute;
     display:flex;
     flex-direction:column;
@@ -1565,7 +1565,7 @@ body,html{
     background:rgba(0,0,0,0);
     z-index:2
 }
-.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
     font-size:1.8rem;
     width:100%;
     line-height:1.3em;
@@ -1574,30 +1574,30 @@ body,html{
     font-weight:500
 }
 @media(max-width: 768px){
-    .body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
+    .bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .header{
         font-size:1.6rem
     }
 }
-.body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .description{
+.bio-body .bio-container .bio_content_container .content-container .content .swiper .bottom .card .bottom-left .description{
     font-size:1.2rem;
     width:100%;
     line-height:1.3em;
     color:#b3b3b3;
     border-radius:10px
 }
-.profile-body-2{
+.bio-2{
     overflow:hidden;
     overflow-y:auto;
     height:100vh;
     width:100vw;
     display:flex
 }
-.profile-body-2 canvas{
+.bio-2 canvas{
     position:fixed;
     top:0;
     left:0
 }
-.profile-body-2 .overlay_audio{
+.bio-2 .overlay_audio{
     position:fixed;
     top:50%;
     left:50%;
@@ -1611,7 +1611,7 @@ body,html{
     -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px)
 }
-.profile-body-2 .overlay_audio .text{
+.bio-2 .overlay_audio .text{
     position:fixed;
     top:50%;
     left:50%;
@@ -1624,7 +1624,7 @@ body,html{
     user-select:none;
     width:max-content
 }
-.profile-body-2 .background{
+.bio-2 .background{
     position:fixed;
     width:100%;
     height:100vh;
@@ -1632,7 +1632,7 @@ body,html{
     background-position:50% !important;
     z-index:-1
 }
-.profile-body-2 .background .noise-effect{
+.bio-2 .background .noise-effect{
     position:absolute;
     top:-50%;
     left:-50%;
@@ -1647,14 +1647,14 @@ body,html{
     opacity:.9;
     visibility:visible
 }
-.profile-body-2 .background .stars-drop{
+.bio-2 .background .stars-drop{
     position:absolute;
     width:1px;
     height:1px;
     background:rgba(0,0,0,0);
     animation:animStar 50s linear infinite
 }
-.profile-body-2 .background .stars-drop:after{
+.bio-2 .background .stars-drop:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -1662,14 +1662,14 @@ body,html{
     height:1px;
     background:rgba(0,0,0,0)
 }
-.profile-body-2 .background .stars-drop2{
+.bio-2 .background .stars-drop2{
     position:absolute;
     width:2px;
     height:2px;
     background:rgba(0,0,0,0);
     animation:animStar 100s linear infinite
 }
-.profile-body-2 .background .stars-drop2:after{
+.bio-2 .background .stars-drop2:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -1677,14 +1677,14 @@ body,html{
     height:2px;
     background:rgba(0,0,0,0)
 }
-.profile-body-2 .background .stars-drop3{
+.bio-2 .background .stars-drop3{
     position:absolute;
     width:3px;
     height:3px;
     background:rgba(0,0,0,0);
     animation:animStar 150s linear infinite
 }
-.profile-body-2 .background .stars-drop3:after{
+.bio-2 .background .stars-drop3:after{
     content:" ";
     position:absolute;
     top:2000px;
@@ -1692,7 +1692,7 @@ body,html{
     height:3px;
     background:rgba(0,0,0,0)
 }
-.profile-body-2 .bio-container{
+.bio-2 .bio-container{
     height:max-content;
     width:100%;
     max-width:500px;
@@ -1701,23 +1701,23 @@ body,html{
     padding-bottom:40px
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container{
+    .bio-2 .bio-container{
         width:95vw
     }
 }
-.profile-body-2 .bio-container.reveal{
+.bio-2 .bio-container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.profile-body-2 .bio-container.reveal.active{
+.bio-2 .bio-container.reveal.active{
     opacity:1
 }
-.profile-body-2 .bio-container .bio_content_container{
+.bio-2 .bio-container .bio_content_container{
     display:flex;
     flex-direction:column;
     gap:15px
 }
-.profile-body-2 .bio-container .css_content_container{
+.bio-2 .bio-container .css_content_container{
     -webkit-backdrop-filter:blur(var(--backgroundBlur));
     backdrop-filter:blur(var(--backgroundBlur));
     background:var(--backgroundColor);
@@ -1726,19 +1726,19 @@ body,html{
     padding:35px;
     width:100%
 }
-.profile-body-2 .bio-container .css_content_container.reveal{
+.bio-2 .bio-container .css_content_container.reveal{
     transition:scale 1s,opacity 1s;
     opacity:0
 }
-.profile-body-2 .bio-container .css_content_container.reveal.active{
+.bio-2 .bio-container .css_content_container.reveal.active{
     opacity:1
 }
-.profile-body-2 .bio-container .main_content_container{
+.bio-2 .bio-container .main_content_container{
     display:flex;
     flex-direction:column;
     align-items:center
 }
-.profile-body-2 .bio-container .main_content_container .like_button_container{
+.bio-2 .bio-container .main_content_container .like_button_container{
     position:absolute;
     top:15px;
     left:15px;
@@ -1754,20 +1754,20 @@ body,html{
     user-select:none;
     cursor:pointer
 }
-.profile-body-2 .bio-container .main_content_container .like_button_container input:checked+svg{
+.bio-2 .bio-container .main_content_container .like_button_container input:checked+svg{
     color:#c50b2b
 }
-.profile-body-2 .bio-container .main_content_container .like_button_container svg{
+.bio-2 .bio-container .main_content_container .like_button_container svg{
     font-size:2rem;
     color:var(--nameColor);
     margin-right:5px;
     transition:.3s
 }
-.profile-body-2 .bio-container .main_content_container .like_button_container .count{
+.bio-2 .bio-container .main_content_container .like_button_container .count{
     font-size:1.4rem;
     color:var(--nameColor)
 }
-.profile-body-2 .bio-container .main_content_container .bio_info{
+.bio-2 .bio-container .main_content_container .bio_info{
     position:absolute;
     top:15px;
     right:15px;
@@ -1776,11 +1776,11 @@ body,html{
     gap:5px
 }
 @media(max-width: 600px){
-    .profile-body-2 .bio-container .main_content_container .bio_info{
+    .bio-2 .bio-container .main_content_container .bio_info{
         flex-direction:column-reverse
     }
 }
-.profile-body-2 .bio-container .main_content_container .bio_info .bio_view{
+.bio-2 .bio-container .main_content_container .bio_info .bio_view{
     display:flex;
     align-items:center;
     z-index:1;
@@ -1792,42 +1792,42 @@ body,html{
     -moz-user-select:none;
     user-select:none
 }
-.profile-body-2 .bio-container .main_content_container .bio_info .bio_view svg{
+.bio-2 .bio-container .main_content_container .bio_info .bio_view svg{
     font-size:2rem;
     color:var(--nameColor);
     margin-right:5px
 }
-.profile-body-2 .bio-container .main_content_container .bio_info .bio_view .seen{
+.bio-2 .bio-container .main_content_container .bio_info .bio_view .seen{
     font-size:1.4rem;
     color:var(--nameColor)
 }
-.profile-body-2 .bio-container .main_content_container .img_container{
+.bio-2 .bio-container .main_content_container .img_container{
     position:absolute;
     top:-70px;
     left:50%;
     transform:translateX(-50%)
 }
-.profile-body-2 .bio-container .main_content_container .img_container .img{
+.bio-2 .bio-container .main_content_container .img_container .img{
     width:140px;
     height:140px;
     border-radius:50%;
     object-fit:cover;
     color:#1a1a1a
 }
-.profile-body-2 .bio-container .main_content_container .img_container .img_effect{
+.bio-2 .bio-container .main_content_container .img_container .img_effect{
     position:absolute;
     width:120%;
     top:48%;
     left:50%;
     transform:translate(-50%, -50%)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex{
+.bio-2 .bio-container .main_content_container .header-badge-flex{
     display:flex;
     align-items:center;
     flex-direction:column;
     gap:8px
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .header{
+.bio-2 .bio-container .main_content_container .header-badge-flex .header{
     color:var(--nameColor);
     font-size:3.6rem;
     font-weight:600;
@@ -1847,7 +1847,7 @@ body,html{
         background-position:500%
     }
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .header.shine_effect{
+.bio-2 .bio-container .main_content_container .header-badge-flex .header.shine_effect{
     margin-right:10px;
     position:relative;
     overflow:hidden;
@@ -1860,7 +1860,7 @@ body,html{
     -webkit-text-fill-color:rgba(0,0,0,0);
     text-shadow:unset !important
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .header.rainbow-text{
+.bio-2 .bio-container .main_content_container .header-badge-flex .header.rainbow-text{
     animation:rainbowAnimation 4s linear infinite;
     -webkit-background-clip:text;
     background-clip:text;
@@ -1869,7 +1869,7 @@ body,html{
     color:rgba(0,0,0,0);
     text-shadow:none
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__wrapper{
+.bio-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__wrapper{
     max-width:400px;
     font-weight:600;
     outline:none;
@@ -1877,16 +1877,16 @@ body,html{
     font-size:1em
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__wrapper{
+    .bio-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__wrapper{
         max-width:none;
         min-width:0px
     }
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__cursor{
+.bio-2 .bio-container .main_content_container .header-badge-flex .header .Typewriter__cursor{
     font-weight:600;
     text-shadow:var(--nameGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container{
     display:flex;
     background-color:var(--discordBackground);
     border:2px solid var(--discordBorder);
@@ -1896,65 +1896,65 @@ body,html{
     gap:8px
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container{
+    .bio-2 .bio-container .main_content_container .header-badge-flex .badge_container{
         padding:4px 6px
     }
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container.singleColor svg{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container.singleColor svg{
     color:var(--badgeColor) !important
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container.badgeGlow svg{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container.badgeGlow svg{
     filter:var(--badgeGlow) !important
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container .badge_img{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container .badge_img{
     width:20px;
     height:20px
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container .badge_img.badgeImgGlow{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container .badge_img.badgeImgGlow{
     filter:var(--badgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg{
     font-size:2rem;
     outline:none;
     border:none
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#premium{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#premium{
     color:#c3fffd;
     filter:var(--premiumBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#verify{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#verify{
     color:#009fff;
     filter:var(--verifyBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#bughunter{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#bughunter{
     color:#37ff74;
     filter:var(--bugHunterBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#og{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#og{
     color:#8a2be2;
     filter:var(--ogBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#developer{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#developer{
     color:#4caf50;
     filter:var(--developerBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#staff{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#staff{
     color:#b2b6f6;
     filter:var(--staffBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#boost{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#boost{
     color:#db3838;
     filter:var(--boostBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#valentine{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#valentine{
     color:#c50b2b;
     filter:var(--valentineBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#unleash{
+.bio-2 .bio-container .main_content_container .header-badge-flex .badge_container svg#unleash{
     color:#2ea967;
     filter:var(--unleashBadgeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .bio_description{
+.bio-2 .bio-container .main_content_container .bio_description{
     font-size:1.6rem;
     line-height:1.4em;
     color:var(--descriptionColor);
@@ -1963,17 +1963,17 @@ body,html{
     word-wrap:break-word;
     margin-top:10px
 }
-.profile-body-2 .bio-container .main_content_container .bio_description .Typewriter__wrapper{
+.bio-2 .bio-container .main_content_container .bio_description .Typewriter__wrapper{
     max-width:400px;
     font-size:1em;
     outline:none;
     white-space:nowrap;
     text-shadow:var(--descriptionGlow)
 }
-.profile-body-2 .bio-container .main_content_container .bio_description .Typewriter__cursor{
+.bio-2 .bio-container .main_content_container .bio_description .Typewriter__cursor{
     text-shadow:var(--descriptionGlow)
 }
-.profile-body-2 .bio-container .main_content_container .location_container{
+.bio-2 .bio-container .main_content_container .location_container{
     display:flex;
     align-items:center;
     gap:5px;
@@ -1982,15 +1982,15 @@ body,html{
     -webkit-user-select:none;
     user-select:none
 }
-.profile-body-2 .bio-container .main_content_container .location_container svg{
+.bio-2 .bio-container .main_content_container .location_container svg{
     font-size:2rem;
     color:var(--nameColor)
 }
-.profile-body-2 .bio-container .main_content_container .location_container .text{
+.bio-2 .bio-container .main_content_container .location_container .text{
     font-size:1.4rem;
     color:var(--nameColor)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container{
+.bio-2 .bio-container .main_content_container .svg_container{
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -2003,7 +2003,7 @@ body,html{
     width:100%;
     margin-top:20px
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item{
     display:flex;
     align-items:center;
     font-size:3rem;
@@ -2014,142 +2014,142 @@ body,html{
     filter:var(--iconGlow) !important;
     transition:scale .3s ease
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item:hover{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item:hover{
     scale:1.1
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item .img{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item .img{
     width:30px;
     height:30px;
     object-fit:cover;
     border-radius:5px;
     filter:var(--customizeIconGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item.discord{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item.discord{
     transition:.4s
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item.discord:hover{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item.discord:hover{
     background-color:rgba(51,51,51,.2);
     border-radius:50px
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item .svg_text{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item .svg_text{
     font-size:1.4rem;
     color:#fff;
     margin-left:5px;
     font-weight:500
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item.singleColor svg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item.singleColor svg{
     color:var(--iconColor) !important
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item.singleColor .svg_text{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item.singleColor .svg_text{
     color:var(--iconColor) !important
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg{
     color:#000
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#snapChatSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#snapChatSvg{
     color:#fffc00;
     filter:var(--snapChatGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#instagramSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#instagramSvg{
     color:#f472b6;
     filter:var(--instagramGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#youtubeSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#youtubeSvg{
     color:red;
     filter:var(--youtubeGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#redditSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#redditSvg{
     color:#fe4000;
     filter:var(--redditGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#tiktokSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#tiktokSvg{
     color:#fff;
     filter:var(--tiktokGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#telegramSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#telegramSvg{
     color:#2aabee;
     filter:var(--telegramGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#facebookSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#facebookSvg{
     color:#2563eb;
     filter:var(--facebookGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#spotifySvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#spotifySvg{
     color:#1ed760;
     filter:var(--spotifyGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#steamSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#steamSvg{
     color:#fff;
     filter:var(--steamGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#discordSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#discordSvg{
     color:#5865f2;
     filter:var(--discordGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#riotSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#riotSvg{
     color:#d1363a;
     filter:var(--riotGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#pinterestSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#pinterestSvg{
     color:#e4001c;
     filter:var(--pinterestGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#emailSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#emailSvg{
     color:#fff;
     filter:var(--emailGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#robloxSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#robloxSvg{
     color:#fff;
     filter:var(--robloxGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#paypalSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#paypalSvg{
     color:#003087;
     filter:var(--paypalGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#ethSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#ethSvg{
     color:#8c8c8c;
     filter:var(--ethGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#btcSVG{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#btcSVG{
     color:#ef8e19;
     filter:var(--btcGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#ltcSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#ltcSvg{
     color:#325a98;
     filter:var(--ltcGlow)
 }
-.profile-body-2 .bio-container .main_content_container .svg_container .svg_item svg#soundcloudSvg{
+.bio-2 .bio-container .main_content_container .svg_container .svg_item svg#soundcloudSvg{
     color:#ff4700;
     filter:var(--soundcloudGlow)
 }
-.profile-body-2 .bio-container .second_embed_container{
+.bio-2 .bio-container .second_embed_container{
     display:flex;
     flex-direction:column;
     gap:10px;
     padding:10px
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .second_embed_container{
+    .bio-2 .bio-container .second_embed_container{
         flex-direction:column
     }
 }
-.profile-body-2 .bio-container .second_embed_container .border{
+.bio-2 .bio-container .second_embed_container .border{
     content:"";
     border:1px solid var(--borderColor)
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container{
+.bio-2 .bio-container .second_embed_container .discord_container{
     display:flex;
     justify-content:center;
     min-width:280px;
     width:100%
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .second_embed_container .discord_container{
+    .bio-2 .bio-container .second_embed_container .discord_container{
         width:100%;
         min-width:unset
     }
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content{
     display:flex;
     align-items:center;
     gap:8px;
@@ -2158,19 +2158,19 @@ body,html{
     border-radius:25px;
     top:0
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content.reveal{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content.reveal.active{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content.reveal.active{
     opacity:1;
     height:100%;
     scale:1
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .discord_link_large{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .discord_link_large{
     font-size:1.6rem;
     background-color:#229150;
     border-radius:8px;
@@ -2181,16 +2181,16 @@ body,html{
     text-decoration:none;
     cursor:pointer
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container{
     position:relative
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container .discord_avatar{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container .discord_avatar{
     height:70px;
     width:70px;
     border-radius:50%;
     object-fit:cover
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container .discord_status{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .discord_avatar_container .discord_status{
     position:absolute;
     width:17px;
     height:17px;
@@ -2198,58 +2198,58 @@ body,html{
     right:5px;
     object-fit:cover
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:100%
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div{
     white-space:nowrap;
     overflow:hidden
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_name{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_name{
     font-size:2.2rem;
     color:var(--nameColor);
     font-weight:500;
     line-height:1em
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description{
     display:flex;
     margin-top:5px;
     font-size:1.4rem;
     color:var(--discordDescription);
     line-height:1.2em
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description .high{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description .high{
     color:var(--nameColor);
     font-weight:500
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description .description_icon{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description .description_icon{
     width:20px;
     height:20px;
     object-fit:cover;
     margin-right:5px
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span{
     display:flex;
     align-items:center;
     margin-right:5px
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span svg{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span svg{
     color:#dce7e8
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span .online_svg{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container div .discord_description span .online_svg{
     color:#23a559
 }
-.profile-body-2 .bio-container .second_embed_container .discord_container .discord_content .text_container .img_activity{
+.bio-2 .bio-container .second_embed_container .discord_container .discord_content .text_container .img_activity{
     height:70px;
     width:70px;
     border-radius:15px;
     object-fit:cover;
     margin-left:10px
 }
-.profile-body-2 .bio-container .markdown_content_container{
+.bio-2 .bio-container .markdown_content_container{
     font-size:160%;
     display:flex;
     justify-content:center;
@@ -2262,76 +2262,76 @@ body,html{
     scrollbar-width:none;
     padding:20px
 }
-.profile-body-2 .bio-container .markdown_content_container strong,.profile-body-2 .bio-container .markdown_content_container b{
+.bio-2 .bio-container .markdown_content_container strong,.bio-2 .bio-container .markdown_content_container b{
     font-weight:bold
 }
-.profile-body-2 .bio-container .markdown_content_container img{
+.bio-2 .bio-container .markdown_content_container img{
     max-width:100%
 }
-.profile-body-2 .bio-container .markdown_content_container h1,.profile-body-2 .bio-container .markdown_content_container h2,.profile-body-2 .bio-container .markdown_content_container h3,.profile-body-2 .bio-container .markdown_content_container h4,.profile-body-2 .bio-container .markdown_content_container h5,.profile-body-2 .bio-container .markdown_content_container h6{
+.bio-2 .bio-container .markdown_content_container h1,.bio-2 .bio-container .markdown_content_container h2,.bio-2 .bio-container .markdown_content_container h3,.bio-2 .bio-container .markdown_content_container h4,.bio-2 .bio-container .markdown_content_container h5,.bio-2 .bio-container .markdown_content_container h6{
     margin-top:24px;
     margin-bottom:16px;
     font-weight:600;
     line-height:1.25
 }
-.profile-body-2 .bio-container .markdown_content_container li+li{
+.bio-2 .bio-container .markdown_content_container li+li{
     margin-top:4px
 }
-.profile-body-2 .bio-container .markdown_content_container p,.profile-body-2 .bio-container .markdown_content_container blockquote,.profile-body-2 .bio-container .markdown_content_container ul,.profile-body-2 .bio-container .markdown_content_container ol,.profile-body-2 .bio-container .markdown_content_container dl,.profile-body-2 .bio-container .markdown_content_container table,.profile-body-2 .bio-container .markdown_content_container pre,.profile-body-2 .bio-container .markdown_content_container details{
+.bio-2 .bio-container .markdown_content_container p,.bio-2 .bio-container .markdown_content_container blockquote,.bio-2 .bio-container .markdown_content_container ul,.bio-2 .bio-container .markdown_content_container ol,.bio-2 .bio-container .markdown_content_container dl,.bio-2 .bio-container .markdown_content_container table,.bio-2 .bio-container .markdown_content_container pre,.bio-2 .bio-container .markdown_content_container details{
     margin-top:0;
     margin-bottom:16px
 }
-.profile-body-2 .bio-container .markdown_content_container::-webkit-scrollbar{
+.bio-2 .bio-container .markdown_content_container::-webkit-scrollbar{
     display:none
 }
-.profile-body-2 .bio-container .markdown_content_container ul{
+.bio-2 .bio-container .markdown_content_container ul{
     padding-left:40px
 }
-.profile-body-2 .bio-container .markdown_content_container .markdown_content{
+.bio-2 .bio-container .markdown_content_container .markdown_content{
     width:100%;
     top:0;
     overflow-y:auto;
     overflow-x:hidden
 }
-.profile-body-2 .bio-container .markdown_content_container .markdown_content::-webkit-scrollbar{
+.bio-2 .bio-container .markdown_content_container .markdown_content::-webkit-scrollbar{
     display:none
 }
-.profile-body-2 .bio-container .markdown_content_container .markdown_content.reveal{
+.bio-2 .bio-container .markdown_content_container .markdown_content.reveal{
     transition:all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity:0;
     scale:.7;
     overflow:hidden;
     height:0px
 }
-.profile-body-2 .bio-container .markdown_content_container .markdown_content.reveal.active{
+.bio-2 .bio-container .markdown_content_container .markdown_content.reveal.active{
     opacity:1;
     min-height:104px;
     height:100%;
     scale:1
 }
-.profile-body-2 .bio-container .audio_container{
+.bio-2 .bio-container .audio_container{
     display:flex;
     flex-direction:column;
     align-items:center
 }
-.profile-body-2 .bio-container .audio_container .noUi-target{
+.bio-2 .bio-container .audio_container .noUi-target{
     border:none;
     box-shadow:unset;
     background-color:#555
 }
-.profile-body-2 .bio-container .audio_container .noUi-connect{
+.bio-2 .bio-container .audio_container .noUi-connect{
     background-color:var(--audioControlColor)
 }
-.profile-body-2 .bio-container .audio_container .noUi-base,.profile-body-2 .bio-container .audio_container .noUi-connects{
+.bio-2 .bio-container .audio_container .noUi-base,.bio-2 .bio-container .audio_container .noUi-connects{
     z-index:unset
 }
-.profile-body-2 .bio-container .audio_container .noUi-connects{
+.bio-2 .bio-container .audio_container .noUi-connects{
     background-color:var(--audioControlRgba05)
 }
-.profile-body-2 .bio-container .audio_container .noUi-horizontal{
+.bio-2 .bio-container .audio_container .noUi-horizontal{
     height:8px
 }
-.profile-body-2 .bio-container .audio_container .noUi-handle{
+.bio-2 .bio-container .audio_container .noUi-handle{
     background-color:#fff;
     border-radius:50%;
     width:16px !important;
@@ -2342,13 +2342,13 @@ body,html{
     right:-12px !important;
     cursor:pointer
 }
-.profile-body-2 .bio-container .audio_container .noUi-handle::after{
+.bio-2 .bio-container .audio_container .noUi-handle::after{
     display:none
 }
-.profile-body-2 .bio-container .audio_container .noUi-handle::before{
+.bio-2 .bio-container .audio_container .noUi-handle::before{
     display:none
 }
-.profile-body-2 .bio-container .audio_container .name{
+.bio-2 .bio-container .audio_container .name{
     font-size:2.2rem;
     color:var(--audioControlColor);
     font-weight:500;
@@ -2356,23 +2356,23 @@ body,html{
     line-height:1em;
     text-align:center
 }
-.profile-body-2 .bio-container .audio_container .flex{
+.bio-2 .bio-container .audio_container .flex{
     display:flex;
     align-items:center;
     gap:10px;
     width:100%
 }
-.profile-body-2 .bio-container .audio_container .flex .duration{
+.bio-2 .bio-container .audio_container .flex .duration{
     font-size:1.4rem;
     color:var(--audioControlColor);
     width:20px
 }
-.profile-body-2 .bio-container .audio_container .flex .slideTrack{
+.bio-2 .bio-container .audio_container .flex .slideTrack{
     flex:1;
     margin:0 10px;
     cursor:pointer
 }
-.profile-body-2 .bio-container .audio_container .flex button{
+.bio-2 .bio-container .audio_container .flex button{
     font-size:3.6rem;
     background:none;
     outline:none;
@@ -2380,11 +2380,11 @@ body,html{
     line-height:0;
     width:max-content
 }
-.profile-body-2 .bio-container .audio_container .flex button svg{
+.bio-2 .bio-container .audio_container .flex button svg{
     color:var(--audioControlColor);
     cursor:pointer
 }
-.profile-body-2 .bio-container .audio_container .audio_control{
+.bio-2 .bio-container .audio_container .audio_control{
     display:flex;
     align-items:center;
     position:fixed;
@@ -2399,132 +2399,132 @@ body,html{
     overflow:hidden;
     cursor:pointer
 }
-.profile-body-2 .bio-container .audio_container .audio_control.revealAudioLink{
+.bio-2 .bio-container .audio_container .audio_control.revealAudioLink{
     transition:.5s;
     opacity:0
 }
-.profile-body-2 .bio-container .audio_container .audio_control.revealAudioLink.active{
+.bio-2 .bio-container .audio_container .audio_control.revealAudioLink.active{
     opacity:1
 }
-.profile-body-2 .bio-container .audio_container .audio_control:hover{
+.bio-2 .bio-container .audio_container .audio_control:hover{
     width:120px;
     padding-right:25px
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .audio_container .audio_control:hover{
+    .bio-2 .bio-container .audio_container .audio_control:hover{
         width:24px;
         padding-right:0
     }
 }
-.profile-body-2 .bio-container .audio_container .audio_control .volumeIcon{
+.bio-2 .bio-container .audio_container .audio_control .volumeIcon{
     font-size:2.4rem;
     color:var(--audioControlColor)
 }
-.profile-body-2 .bio-container .audio_container .audio_control .volumeIcon.active{
+.bio-2 .bio-container .audio_container .audio_control .volumeIcon.active{
     animation:bounce .3s
 }
-.profile-body-2 .bio-container .audio_container .audio_control .volumeIcon.unactive{
+.bio-2 .bio-container .audio_container .audio_control .volumeIcon.unactive{
     animation:bounceRepeat .3s
 }
-.profile-body-2 .bio-container .link_container{
+.bio-2 .bio-container .link_container{
     display:flex;
     flex-direction:column;
     gap:8px;
     align-items:center
 }
-.profile-body-2 .bio-container .link_container .link_item{
+.bio-2 .bio-container .link_container .link_item{
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:10px;
     padding:15px
 }
-.profile-body-2 .bio-container .link_container .link_item:hover .link_arrow{
+.bio-2 .bio-container .link_container .link_item:hover .link_arrow{
     transform:translateX(5px)
 }
-.profile-body-2 .bio-container .link_container .link_item .item_flex{
+.bio-2 .bio-container .link_container .link_item .item_flex{
     display:flex;
     align-items:center;
     gap:10px;
     flex:1;
     overflow:hidden
 }
-.profile-body-2 .bio-container .link_container .link_item .img{
+.bio-2 .bio-container .link_container .link_item .img{
     width:60px;
     height:60px;
     border-radius:15px;
     object-fit:cover
 }
-.profile-body-2 .bio-container .link_container .link_item .center_content .header{
+.bio-2 .bio-container .link_container .link_item .center_content .header{
     font-size:1.8rem;
     color:var(--nameColor);
     font-weight:500;
     line-height:1.3em
 }
-.profile-body-2 .bio-container .link_container .link_item .center_content .description{
+.bio-2 .bio-container .link_container .link_item .center_content .description{
     font-size:1.4rem;
     color:var(--discordDescription);
     line-height:1.3em
 }
-.profile-body-2 .bio-container .link_container .link_item .link_arrow{
+.bio-2 .bio-container .link_container .link_item .link_arrow{
     flex-shrink:0;
     font-size:3rem;
     color:var(--nameColor);
     transition:all .3s ease
 }
-.profile-body-2 .bio-container .couple_embed_container{
+.bio-2 .bio-container .couple_embed_container{
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:10px;
     width:100%
 }
-.profile-body-2 .bio-container .couple_embed_container .avatar_container{
+.bio-2 .bio-container .couple_embed_container .avatar_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:0
 }
-.profile-body-2 .bio-container .couple_embed_container .avatar_container .avatar{
+.bio-2 .bio-container .couple_embed_container .avatar_container .avatar{
     width:80px;
     height:80px;
     border-radius:50%;
     object-fit:cover
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .couple_embed_container .avatar_container .avatar{
+    .bio-2 .bio-container .couple_embed_container .avatar_container .avatar{
         width:70px;
         height:70px
     }
 }
-.profile-body-2 .bio-container .couple_embed_container .avatar_container .name{
+.bio-2 .bio-container .couple_embed_container .avatar_container .name{
     font-size:1.8rem;
     font-weight:500;
     margin-top:5px;
     color:var(--nameColor)
 }
 @media(max-width: 768px){
-    .profile-body-2 .bio-container .couple_embed_container .avatar_container .name{
+    .bio-2 .bio-container .couple_embed_container .avatar_container .name{
         font-size:1.6rem
     }
 }
-.profile-body-2 .bio-container .couple_embed_container .heart_container{
+.bio-2 .bio-container .couple_embed_container .heart_container{
     display:flex;
     flex-direction:column;
     align-items:center;
     flex-grow:1;
     overflow:hidden
 }
-.profile-body-2 .bio-container .couple_embed_container .heart_container .date_time{
+.bio-2 .bio-container .couple_embed_container .heart_container .date_time{
     font-size:1.4rem;
     color:var(--descriptionColor)
 }
-.profile-body-2 .bio-container .couple_embed_container .heart_container .svg{
+.bio-2 .bio-container .couple_embed_container .heart_container .svg{
     font-size:8rem;
     color:#c50b2b;
     animation:heartBeat 1s infinite
 }
-.profile-body-2 .bio-container .couple_embed_container .heart_container .img{
+.bio-2 .bio-container .couple_embed_container .heart_container .img{
     width:80px;
     height:80px
 }
@@ -2536,7 +2536,7 @@ body,html{
         transform:scale(1.1)
     }
 }
-.profile-body-2 .bio-container .couple_embed_container .heart_container .time{
+.bio-2 .bio-container .couple_embed_container .heart_container .time{
     font-size:1.4rem;
     text-align:center;
     line-height:1.3em;
